@@ -52,7 +52,7 @@ mongoose.connect('mongodb://mongo:27017/mantra-db', { useNewUrlParser: true, use
         console.log('MongoDB Connected...');
 
         // Seed Data...
-        // seedData();
+        seedData();
 
         // Generate embeddings of products based on product titles...
         // Embeddings have been generated for now, calling from the file...
@@ -87,7 +87,7 @@ async function compareCosineSimilarity(searchQueryVector, countProducts) {
     return indexedValues.map(obj => obj.index);
 }
 
-app.get('/', async (req, res) => {
+app.get('/getItems/', async (req, res) => {
     let matches = {
         exactPhraseMatches: [],
         exactWordMatches: [],

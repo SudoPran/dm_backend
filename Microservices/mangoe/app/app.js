@@ -87,7 +87,7 @@ async function compareCosineSimilarity(searchQueryVector, countProducts) {
     return indexedValues.map(obj => obj.index);
 }
 
-app.get('/', async (req, res) => {
+app.get('/getItems/', async (req, res) => {
     let matches = {
         exactPhraseMatches: [],
         exactWordMatches: [],
