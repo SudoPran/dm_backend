@@ -11,7 +11,8 @@ const productSchema = new Schema({
     description: String,
     review: String,
     reviewContent: String,
-    img_link: String
+    img_link: String,
+    seller_id: String
 });
 
 const Product = model('Product', productSchema, 'products');

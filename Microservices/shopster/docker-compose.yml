@@ -8,6 +8,11 @@ services:
       - mongo
     environment:
       - NODE_ENV=development
+  # api:
+  #   image: "shopster-app"
+  #   network_mode: bridge
+  #   ports:
+  #     - "3001:3001"
   mongo:
     image: "mongo"
     ports:

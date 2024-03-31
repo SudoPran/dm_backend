@@ -13,6 +13,7 @@ const cosineSimilarity = require('./cosine-similarity')
 const { substringChecker, findIndicesOfExactMatchesSorted } = require('./exact-matcher')
 
 const app = express();
+app.use(express.json());
 const port = 3003;
 
 var productTitleEmbeddings;
@@ -132,6 +133,22 @@ app.get('/getItems/', async (req, res) => {
         }
     }
     res.send(JSON.stringify(matches));
+});
+
+app.post('/newOrder/', async (req, res) => {
+    if (req && req.body) {
+        try {
+            const newOrder = new Orders(req.body);
+            const savedOrder = await newOrder.save();
+            res.status(201).send(savedOrder);
+        }
+        catch (error) {
+            res.status(400).send(error);
+        }
+    }
+    else {
+        res.status(400).send({});
+    }
 });
 
 app.listen(port, () => {
