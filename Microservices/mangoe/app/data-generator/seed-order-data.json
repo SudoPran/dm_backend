@@ -1,29 +1,29 @@
 [
     {
         "_id": "MAN57288B",
-        "product_ids": ["B07JW9H4J1", "B096MSW6CT"],
+        "product_ids": ["B097R3XH9R", "B08TM71L54"],
         "quantities": [2, 1],
-        "date_created": "Thu Mar 14 2024 07:49:21 GMT-0400 (Eastern Daylight Time)",
+        "date_created": "2024-03-01 07:49:21",
         "date_modified": "",
         "status": "Confirmed",
-        "total_cost": 4097
+        "total_cost": 34735
     },
     {
         "_id": "MAN61428A",
-        "product_ids": ["B08HDJ86NZ"],
+        "product_ids": ["B0BPBXNQQT"],
         "quantities": [1],
-        "date_created": "Thu Mar 12 2024 11:49:21 GMT-0400 (Eastern Daylight Time)",
+        "date_created": "2024-03-02 11:49:21",
         "date_modified": "",
         "status": "Delivered",
-        "total_cost": 699
+        "total_cost": 1989
     },
     {
         "_id": "MAN44288B",
-        "product_ids": ["B08Y1TFSP6"],
+        "product_ids": ["B0883KDSXC"],
         "quantities": [3],
-        "date_created": "Thu Mar 11 2024 10:20:28 GMT-0400 (Eastern Daylight Time)",
+        "date_created": "2024-03-03 10:20:28",
         "date_modified": "",
         "status": "Delivered",
-        "total_cost": 3000
+        "total_cost": 2970
     }
 ]
